@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Arial";
+}
+
+.firs-block {
+  background-color: #f6f6f6;
+  max-width: 1200px;
+  width: 100%;
+  height: 675px;
+  margin: 50px auto;
+  padding: 86px 95px;
+
+}
+
+.second-block {
+  border: 1px solid #d7d7d7;
+  max-width: 1010px;
+  height: 503px;
+  background-color: #ffffff;
+
+}
+
+img {
+  margin: 64px 100px 64px 48px;
+}
+
+.headphones {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.text {
+  display: inline-block;
+  vertical-align: top;
+
+}
+
+.name {
+  margin-top: 94px;
+}
+
+.description {
+  margin-top: 30px;
+}
+
+.description p {
+  width: 393px;
+  font-size: 15px;
+}
+
+.price {
+  margin-top: 55px;
+  font-size: 15px;
+  display: block;
+}
+
+
+.price2 {
+  margin-top: 23px;
+  font-size: 30px;
+  display: block;
+}
+
+
+
+button {
+  width: 252px;
+  height: 50px;
+  background-color: #ec744a;
+  font-style: 19px;
+  color: #fff;
+  border: none;
+  margin-top: 72px;
+}
+
+

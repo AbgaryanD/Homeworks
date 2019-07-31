@@ -1,0 +1,32 @@
+body {
+  color: #333333;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.container {
+  text-align: center;
+  margin-top: 70px;
+  margin-bottom: 97px;
+}
+
+h2 {
+  margin-bottom: 81px;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.block {
+  margin-top: 30px;
+}
+
+.block-text {
+  display: block;
+}
+
+.img {
+  margin-bottom: 20px;
+  min-height: 75px;
+}

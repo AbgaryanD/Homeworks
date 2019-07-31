@@ -1,0 +1,214 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.hero {
+  padding-top: 74px;
+  padding-bottom: 191px;
+  background-color: #f4f5f7;
+}
+
+.container {
+  max-width: 1140px;
+  width: 96%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 159px;
+}
+
+.brand {
+color: #95989a;
+font-size: 20px;
+font-weight: 700;
+text-transform: uppercase;
+}
+
+.social a {
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-text {
+  width: 50%;
+  color: #32325f;
+}
+
+.subtitle {
+  display: flex;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.title {
+  font-size: 48px;
+  display: block;
+  margin-bottom: 26px;
+  font-weight: 700;
+}
+
+.description {
+  margin-bottom: 15px;
+  line-height: 26px;
+  font-size: 20px;
+
+}
+
+.price-title {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 20px;
+font-weight: 400;
+}
+
+.price {
+  font-size: 48px;
+font-weight: 400;
+}
+
+.buttons {
+  margin-top: 49px;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 20px 30px;
+  box-shadow: 0 3px 6px rgba(173, 173, 173, 0.16);
+  border-radius: 6px;
+  color: #ffffff;
+}
+
+.btn-success{
+  background-color: #2dce89;
+  margin-right: 30px;
+}
+
+.btn-primary {
+  background-color: #5e72e4;
+}
+
+.about {
+  padding-top: 90px;
+  padding-bottom: 130px;
+}
+
+.section-text {
+  color: #32325f;
+}
+
+.section-subtitle {
+  font-size: 20px;
+  display: block;
+  margin-bottom: 14px;
+}
+
+.section-title {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.wrap {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 99px;
+}
+
+.block {
+  width: 23%;
+  margin-right: 2%;
+}
+
+
+.block-text {
+  margin-top: 40px;
+  color: #525f7f;
+  line-height: 1.3;
+}
+
+.block p {
+  font-size: 16px;
+}
+
+.people {
+  background-color: #f4f5f7;
+  padding-top: 90px;
+  padding-bottom: 112px;
+}
+
+.people-image {
+  display: flex;
+  max-width: 1142px;
+  flex-wrap: wrap;
+  margin-top: 64px;
+}
+
+.buyers {
+  margin: 9px;
+}
+
+.buyers img{
+  max-height: 254px;
+  max-width: 362px;
+  height: 100%;
+  width:100%;
+  object-fit: cover;
+}
+
+.footer {
+  background-color: #32325f;
+  color: white;
+  padding-top: 78px;
+  padding-bottom: 104px;
+}
+
+.footer-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-block {
+  width: 33%;
+  margin-left: 60px;
+}
+
+.footer-title {
+  font-size: 24px;
+font-weight: 700;
+}
+
+.footer-block p a {
+  color: #ffffff;
+  display: block;
+  margin-top: 10px;
+  text-decoration: none;
+  
+}
+
+.footer-block p {
+  margin-top: 35px;
+  line-height: 1.4;
+}
+
+.footer-title-text-description {
+  display: block; 
+  line-height: 1.4;
+}
+
+.footer-title-text {
+  margin-top: 35px;
+}

@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: #000;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.box .glitch {
+  color: #ffff;
+  font-size: 50px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  position: relative;
+  padding: 30px;
+}
+.box .glitch:before, .box .glitch:after {
+  content: "Хочу ебаца: Номер +79644220272";
+  position: absolute;
+  color: #ffff;
+  top: 0;
+  overflow: hidden;
+  padding: 30px;
+}
+.box .glitch:before {
+  left: 3px;
+  text-shadow: -2px 0 red;
+  animation: glitch-before 2s linear 0s infinite alternate;
+}
+.box .glitch:after {
+  left: -3px;
+  text-shadow: -2px 0 blue;
+  animation: glitch-after 2s linear 0s infinite alternate-reverse;
+}
+
+@keyframes glitch-before {
+  0% {
+    clip: rect(121px, 1500px, 129px, 30px);
+  }
+  5% {
+    clip: rect(80px, 1500px, 82px, 30px);
+  }
+  10% {
+    clip: rect(51px, 1500px, 138px, 30px);
+  }
+  15% {
+    clip: rect(79px, 1500px, 126px, 30px);
+  }
+  20% {
+    clip: rect(143px, 1500px, 69px, 30px);
+  }
+  25% {
+    clip: rect(70px, 1500px, 70px, 30px);
+  }
+  30% {
+    clip: rect(104px, 1500px, 30px, 30px);
+  }
+  35% {
+    clip: rect(73px, 1500px, 149px, 30px);
+  }
+  40% {
+    clip: rect(144px, 1500px, 23px, 30px);
+  }
+  45% {
+    clip: rect(131px, 1500px, 17px, 30px);
+  }
+  50% {
+    clip: rect(112px, 1500px, 125px, 30px);
+  }
+  55% {
+    clip: rect(87px, 1500px, 80px, 30px);
+  }
+  60% {
+    clip: rect(12px, 1500px, 17px, 30px);
+  }
+  65% {
+    clip: rect(1px, 1500px, 80px, 30px);
+  }
+  70% {
+    clip: rect(4px, 1500px, 137px, 30px);
+  }
+  75% {
+    clip: rect(64px, 1500px, 27px, 30px);
+  }
+  80% {
+    clip: rect(78px, 1500px, 17px, 30px);
+  }
+  85% {
+    clip: rect(36px, 1500px, 116px, 30px);
+  }
+  90% {
+    clip: rect(30px, 1500px, 127px, 30px);
+  }
+  95% {
+    clip: rect(43px, 1500px, 6px, 30px);
+  }
+  100% {
+    clip: rect(106px, 1500px, 21px, 30px);
+  }
+}
+@keyframes glitch-after {
+  0% {
+    clip: rect(68px, 1500px, 132px, 30px);
+  }
+  5% {
+    clip: rect(143px, 1500px, 69px, 30px);
+  }
+  10% {
+    clip: rect(2px, 1500px, 15px, 30px);
+  }
+  15% {
+    clip: rect(99px, 1500px, 148px, 30px);
+  }
+  20% {
+    clip: rect(18px, 1500px, 126px, 30px);
+  }
+  25% {
+    clip: rect(150px, 1500px, 126px, 30px);
+  }
+  30% {
+    clip: rect(8px, 1500px, 90px, 30px);
+  }
+  35% {
+    clip: rect(41px, 1500px, 14px, 30px);
+  }
+  40% {
+    clip: rect(75px, 1500px, 95px, 30px);
+  }
+  45% {
+    clip: rect(32px, 1500px, 18px, 30px);
+  }
+  50% {
+    clip: rect(60px, 1500px, 41px, 30px);
+  }
+  55% {
+    clip: rect(33px, 1500px, 73px, 30px);
+  }
+  60% {
+    clip: rect(119px, 1500px, 61px, 30px);
+  }
+  65% {
+    clip: rect(86px, 1500px, 93px, 30px);
+  }
+  70% {
+    clip: rect(98px, 1500px, 89px, 30px);
+  }
+  75% {
+    clip: rect(112px, 1500px, 61px, 30px);
+  }
+  80% {
+    clip: rect(73px, 1500px, 53px, 30px);
+  }
+  85% {
+    clip: rect(61px, 1500px, 19px, 30px);
+  }
+  90% {
+    clip: rect(146px, 1500px, 26px, 30px);
+  }
+  95% {
+    clip: rect(147px, 1500px, 35px, 30px);
+  }
+  100% {
+    clip: rect(89px, 1500px, 23px, 30px);
+  }
+}
