@@ -1,7 +1,7 @@
 body 
  +reg
 img
-  max-width: 100%
+  width: 100%
 .container 
   width: 1170px
   margin: auto 
@@ -12,6 +12,10 @@ img
   .container
     max-width: 580px   
     width: 90%
+@media (max-width: 326px)
+  .container
+    max-width: 290
+    width: 95%
 .button
   border-radius: 10px
   background-color: $main-color
@@ -20,5 +24,4 @@ img
   padding-bottom: 17px
   padding-left: 30px
   padding-right: 30px
-  width: 170px
-  height: 49px
+  
