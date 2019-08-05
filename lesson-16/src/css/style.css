@@ -448,6 +448,9 @@ img {
     width: 100%;
     margin-bottom: 10px;
   }
+  .offer__input:first-child {
+    margin-right: 0px;
+  }
   .offer__button {
     font-size: 12px;
   }
@@ -465,6 +468,27 @@ img {
 @media (max-width: 768px) {
   .offer {
     background: #fff;
+  }
+  .offer__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .offer__input {
+    min-width: 247px;
+    max-width: 65%;
+  }
+  .offer__button {
+    max-width: 65%;
+    min-width: 246px;
+    font-size: 14px;
   }
   .offer-block {
     width: 100%;
@@ -506,13 +530,22 @@ img {
   }
   .offer__input {
     width: 94%;
-    margin-left: 7px;
+    margin-left: -2px;
+    max-width: 100%;
+    padding-left: 20px;
+  }
+  .offer__input[placeholder] {
+    font-size: 15px;
   }
   .offer__button {
     font-size: 15px;
     width: 94%;
-    margin-left: 8px;
+    margin-left: -2px;
     margin-bottom: 23px;
+    max-width: 100%;
+    line-height: 17px;
+    padding-left: 42px;
+    padding-right: 40px;
   }
   .offer-additional {
     -webkit-box-orient: vertical;
