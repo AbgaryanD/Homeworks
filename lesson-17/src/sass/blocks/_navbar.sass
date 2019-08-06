@@ -1,0 +1,57 @@
+.navbar 
+  padding: 8px 0
+  &-block
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &__info 
+    display: flex
+    align-items: center
+    text-align: right
+  &__adress
+    display: flex
+    flex-direction: column
+    font-size: 13px
+  &__button
+    margin-left: 30px
+    font-size: 13px
+    margin-bottom: 8px
+    +bold
+  &__phone 
+    display: inline-block
+    font-size: 20px
+    color: $text-color 
+    text-decoration: none
+    margin-top: 9px
+    margin-bottom: 6px
+    +bold
+@media (max-width: 768px)
+  .navbar
+    &__contacts
+      display: none   
+    &__button
+      padding-top: 15px
+      padding-bottom: 14px
+      padding-right: 26px
+      padding-left: 26px  
+      font-size: 10px
+    &__logo
+      width: 90px
+@media (max-width: 576px) and (min-width: 320px)  
+  .navbar
+    padding-top: 8px
+    padding-bottom: 16px
+    &__contacts
+      display: none 
+    &__button
+      margin-right: 8px
+      margin-bottom: 0px
+      padding-top: 15px
+      padding-bottom: 14px
+      padding-right: 26px
+      padding-left: 26px  
+      font-size: 10px
+    &__logo
+      width: 90px
+      transform: translate(5px, 3px)  
+       
