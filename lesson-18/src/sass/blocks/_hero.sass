@@ -1,0 +1,109 @@
+.hero
+  padding-top: 50px
+  padding-bottom: 46px
+  background-color: $secondary
+  max-width: 100%
+  min-width: 328px
+  &-image 
+    transform: translate(-2px, -2px)
+  &-block
+    display: flex
+  &-text
+    flex-basis: 52%
+    padding-right: 120px
+    &__title
+      font-size: 41px
+      line-height: 53px  
+      margin-bottom: 40px
+      +bold
+    &__subtitle
+      font-size: 20px
+      display: block
+      margin-bottom: 67px
+      +bold   
+  &-list
+    margin: 0
+    padding: 0
+    &__item
+      display: flex
+      align-items: center    
+      margin-bottom: 30px
+      &:last-child
+        margin-bottom: 0
+    &__image
+      width: 40px
+      height: 40px
+      display: flex
+      align-items: center
+      justify-content: center
+      border-radius: 50%
+      margin-right: 30px
+    &__text
+      max-width: 251px  
+      max-height: 40px 
+      font-size: 14px
+      line-height: 20px 
+  
+    
+      
+      
+@media (max-width: 1200px)      
+  .hero 
+    &-block
+      flex-direction: column
+      align-items: center
+    &-list
+      margin-bottom: 38px  
+      &__text
+        word-break: break-word
+        width: 251px
+      &__item
+        justify-content: center
+        align-items: center 
+    &-text
+      padding-right: 25px
+      &__title
+        text-align: center
+      &__subtitle 
+        text-align: center
+      
+@media (max-width: 768px)   
+  .hero
+    &-text
+      &__title
+        font-size: 24px
+        line-height: 1.4
+        margin-bottom: 13px
+      &__subtitle
+        font-size: 16px
+        margin-bottom: 28px
+    &-list
+      &__item
+        margin-bottom: 20px
+      &__text
+        font-size: 12px    
+      &__image
+        margin-right: 15px  
+
+@media (max-width: 576px) and (min-width: 320px)
+  .hero
+    padding-top: 42px
+    &-text
+      &__title
+        margin-bottom: 5px
+        text-align: start
+        margin-top: -4px
+        margin-left: 27px
+      &__subtitle
+        text-align: start
+        width: 198px
+        margin-left: 32px  
+    &-list 
+      transform: translateX(28px) 
+      width: 95%    
+      &__text
+        line-height: 14px
+    &-image
+      margin-left: 7px
+      margin-right: 15px
+      margin-top: 6px
