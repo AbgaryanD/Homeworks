@@ -588,9 +588,9 @@ img {
 
 .modal-dialog__close {
   position: absolute;
-  right: 0;
+  right: 9px;
   width: 32px;
-  height: 32px;
+  height: 37px;
   opacity: 0.3;
   background: none;
   border: none;
