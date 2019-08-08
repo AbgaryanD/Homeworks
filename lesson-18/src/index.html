@@ -100,10 +100,22 @@
   <div class="modal" id="modal">
       <div class="modal-dialog">
         <button class="modal-dialog__close" id="close"></button>
-        <h4 class="modal-dialog__title">Пожалуйста заполните данные и мы свяжемся с вами!</h4>
-        <input type="text" class="input modal-dialog__input" placeholder="Ваше имя">
-        <input type="tel" class="input modal-dialog__input" placeholder="Ваш телефон">
-        <button class="modal-dialog__button button">Отправить Заявку</button>
+        <div class="modal-text">
+          <h4 class="modal-text__title">Узнайте точную стоимость
+            ремонта по телефону!</h4>
+          <span class="modal-text__hint">Заполните поля ниже - мы свяжемся с Вами</span>
+        </div>
+        <form action="#" class="modal-form">
+        <input type="text" class="input modal-form__input" placeholder="Ваше имя">
+        <input type="tel" class="input modal-form__input" placeholder="Ваш телефон">
+        <button class="modal-form__button button">Узнать стоимость</button>
+        </form>
+        <div class="modal-description">
+          <span class="modal-description__text">Или Вы можете перезвонить нам сами
+            по телефону:</span>
+          <a href="tel:+7 495 42-251-31" class="modal-description__telephone">+7 (8182) 42-51-31</a>
+        </div>
+        <!-- /.description -->
       </div>
       <!-- /.modal-dialog -->
     </div>
@@ -113,7 +125,7 @@
   <button class="top hide" id="top"></button>
     
 
-  <!-- <script src="js/main.js"></script>   -->
+  <script src="js/main.js"></script>  
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="js/modal.js"></script>
   <script src="js/top.js"></script>
