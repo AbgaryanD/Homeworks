@@ -1,0 +1,109 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: url(../img/background.png);
+  background-size: cover;
+}
+
+.container {
+  text-align: center;
+  font-family: 'Roboto Mono', monospace;
+  margin-top: 420px;
+  margin-bottom: 800px;
+}
+
+.dud {
+  color: #ff1c73;
+}
+
+.text {
+  font-weight: 900;
+  font-size: 50px;
+  color: #1e1e1f;
+}
+
+.scroll {
+  margin-top: 15px;
+}
+
+.main-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 700;
+}
+
+.main-text a {
+  text-decoration: none;
+}
+
+.lesson {
+  border: 2px solid #404144;
+  margin-bottom: 20px;
+}
+
+.succes {
+  border: 2px solid green;
+}
+
+.danger {
+  border: 2px solid #9e0000;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul .inner {
+  overflow: hidden;
+  display: none;
+}
+
+ul .inner.show {
+  /*display: block;*/
+}
+
+ul li {
+  margin: .5em 0;
+  margin-bottom: 20px;
+}
+
+ul li a.toggle {
+  min-width: 350px;
+  max-width: 640px;
+  display: block;
+  color: #fefefe;
+  padding: .75em;
+  border-radius: 5px;
+  -webkit-transition: background .3s ease;
+  transition: background .3s ease;
+  margin-bottom: 5px;
+}
+
+ul li a.toggle:hover {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+p {
+  max-width: 640px;
+  text-align: start;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 300;
+  white-space: pre-line;
+}
+/*# sourceMappingURL=style.css.map */
