@@ -76,11 +76,12 @@
           <span class="section-subtitle offer__subtitle">Оставьте заявку на разработку 
             бесплатного дизайн-проекта!</span>
           <!-- /.section-subtitle -->
-          <form action="#" class="form offer__form">
-            <input type="text" class="input offer__input" placeholder="Ваше имя">
-            <input type="tel" class="input offer__input" placeholder="Ваш телефон">
-            <button class="button offer__button">Получить бесплатный дизайн-проект</button>
+          <form action="#" id="offer-form" class="form offer__form">
+            <input type="text" name="username" class="input offer__input" placeholder="Ваше имя">
+            <input type="tel" name="userphone" class="input offer__input" placeholder="Ваш телефон">
+            <button class="button offer__button" id="offer__button">Получить бесплатный дизайн-проект</button>
           </form>
+          
           <div class="offer-additional">
             <span class="offer__addition">Наш менеджер перезвонит Вам
               в течение 60 секунд</span>
@@ -120,6 +121,14 @@
     </div>
     <!-- /.modal -->
 
+
+     <div class="second-modal" id="second-modal">
+      <div class="good">
+        <div class="good-success">123123</div>
+        <button class="button good-button" id="good_close">Закрыть</button>
+      </div>
+     </div>
+
     
   <button class="top hide" id="top"></button>
     
@@ -128,6 +137,7 @@
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="js/modal.js"></script>
   <script src="js/top.js"></script>
+  <script src="js/scripts.js"></script>
 
 </body>
 </html>

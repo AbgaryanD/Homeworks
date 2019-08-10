@@ -1,0 +1,233 @@
+.modal
+  position: fixed
+  left: 0
+  top: 0
+  width: 100%
+  height: 100%
+  background-color: rgba(#000, 0.5)
+  display: none
+  &_active
+    display: flex
+  &-dialog
+    margin: auto
+    max-width: 570px
+    width: 90%
+    background-color: #fff
+    max-height: 723px
+    text-align: center
+    position: relative
+    &__close
+      position: absolute
+      right: 9px
+      width: 32px
+      height: 37px
+      opacity: 0.3
+      background: none
+      border: none
+      transition: 0.3s
+      cursor: pointer
+      outline: none
+      &:hover 
+        opacity: 1
+      &:before, &:after 
+        position: absolute
+        bottom: -3px
+        content: ' '
+        height: 33px
+        width: 2px
+        background-color: #333
+      &:before 
+        transform: rotate(45deg)
+      &:after 
+        transform: rotate(-45deg)
+  &-text      
+    &__title
+      line-height: 33px
+      +bold
+      font-size: 22px
+      max-width: 52%
+      margin-top: 80px
+      margin-left: auto
+      margin-right: auto
+      margin-bottom: 52px
+    &__hint
+      font-size: 16px
+      line-height: 35px
+      margin-bottom: 53px
+      display: block
+  &-form    
+    &__input
+      width: 66%
+      margin-left: auto
+      margin-right: auto
+      margin-bottom: 15px  
+      &:last-of-type
+        margin-bottom: 30px  
+    &__button
+      width: 66%
+      margin-left: auto
+      margin-right: auto
+      margin-bottom: 20px
+      +bold
+      line-height: 18px
+      font-size: 16px
+      padding-top: 28px
+      padding-bottom: 29px
+    
+  &-description     
+    margin-bottom: 76px  
+    &__telephone
+      text-decoration: none
+      +bold
+      color: $text-color
+      font-size: 24px
+    &__text
+      max-width: 307px
+      margin: auto
+      margin-bottom: 13px
+      display: block
+
+  
+@media (max-width: 1200px)
+ .modal
+    &-dialog
+      max-height: 650px
+      max-width: 508px
+    &-text
+      &__title
+        max-width: 60%
+        margin-top: 46px
+        margin-bottom: 29px
+    &-form
+      &__button      
+        margin-bottom: 30px
+    &-description
+      &__text
+        margin-bottom: 26px
+@media (max-width: 768px)       
+ .modal
+    &-dialog
+      max-height: 607px
+      max-width: 467px
+    &-text
+      &__title
+        margin-top: 32px
+        font-size: 20px
+        margin-bottom: 20px
+      &__hint
+        margin-bottom: 40px
+    &-form
+      &__button      
+        margin-bottom: 46px
+        width: 60%
+        padding-top: 22px
+        padding-bottom: 22px
+      &__input
+        padding: 22px
+        width: 60%  
+        &:last-of-type
+          margin-bottom: 25px  
+    &-description
+      &__text
+        margin-bottom: 26px
+@media (max-width: 576px) and (min-width: 320px)      
+ .modal
+    &-dialog
+      max-height: 530px
+      max-width: 607px
+    &-text
+      &__title
+        max-width: 90%
+      &__hint
+        margin-bottom: 17px
+        line-height: 27px
+        font-size: 13px
+        width: 80%
+        margin-left: auto
+        margin-right: auto
+    &-form
+      &__button      
+        margin-bottom: 29px
+        width: 70%
+        padding-top: 15px
+        padding-bottom: 15px
+        font-style: 14px
+      &__input
+        padding: 15px
+        width: 70%  
+    &-description
+      &__text
+        font-size: 13px
+        width: 80%
+      &__telephone
+        font-size: 20px
+
+.second-modal
+  position: fixed
+  left: 0
+  top: 0
+  width: 100%
+  height: 100%
+  background-color: rgba(#000, 0.5)
+  display: none
+  &_active
+    display: flex
+.good
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  margin: auto
+  max-width: 640px
+  max-height: 230px
+  background-color: rgb(255, 254, 254)
+  border: 3px solid #ffd200
+  display: flex
+  justify-content: space-between
+  flex-direction: column
+  border-radius: 12px
+  &-button
+    padding: 17px 69px 
+    // margin-top: 173px
+    // margin-left: 220px
+    +bold
+    font-size: 17px
+    border: none
+    outline: none
+    margin: auto
+    width: 50%
+    border: 1px solid #ffd200
+  &-success
+    align-self: center  
+    +bold
+    margin-bottom: 66px
+    margin-top: 83px
+    font-size: 17px
+@media (max-width: 768px)   
+ .good
+    max-width: 330px
+    max-height: 410px
+    &-success
+      word-break: break-all
+      margin-left: 14px
+      margin-right: 15px
+      margin-bottom: 226px
+      text-align: center
+    &-button
+      width: 63%
+      text-align: center  
+@media (max-width: 576px) and (min-width: 320px)     
+  .good
+    max-width: 246px
+    max-height: 300px
+    &-success
+      word-break: break-all
+      margin-left: 14px
+      margin-right: 15px
+      margin-bottom: 97px
+      text-align: center
+    &-button
+      width: 63%
+      text-align: center  
+      padding: 17px

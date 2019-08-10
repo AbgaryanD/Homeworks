@@ -7,7 +7,7 @@
 }
 
 .wrapper {
-  width: 74%;
+  width: 66%;
   font-size: 35px;
   height: 175px;
   font-weight: 900;
@@ -15,13 +15,13 @@
 }
 
 .wave {
-  color: rgb(8, 218, 207);
+  color: rgb(163, 4, 4);
   animation: 0.5s color infinite;
 }
 
 @keyframes color {
   70% {
-    color: #2d52f8;
+    color: #010f4d;
   }
 }
 
@@ -36,6 +36,7 @@ $fontSize: 10rem;
   justify-content: center;
   align-items: center;
   perspective: 500px;
+  margin-bottom: -355px;
 }
 
 .change {
@@ -71,11 +72,11 @@ $fontSize: 10rem;
 
 @keyframes wave {
   0% {
-    transform: translate(-50%, -50%) scale(0.9) rotateX(20deg) rotateY(20deg);
-    color: rgb(253, 208, 6);
+    transform: translate(-50%, -50%) scale(0.9) rotateX(10deg) rotateY(10deg);
+    color: #e9493a;
   }
   100% {
     transform: translate(-50%, -50%) scale(1.1) rotateX(0deg) rotateY(0deg);
-    color: rgb(223, 33, 65);
+    color: rgb(28, 67, 185);
   }
 }
