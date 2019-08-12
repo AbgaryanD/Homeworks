@@ -1,0 +1,101 @@
+.price
+  max-width: 100%
+  min-width: 328px
+  &__title
+    max-width: 555px
+    margin: auto
+    padding-top: 93px
+    margin-bottom: 48px
+    line-height: 43px
+  &__subtitle
+    text-align: center  
+    margin-bottom: 59px
+    font-size: 20px
+  &__card
+    margin-bottom: 30px  
+.card
+  text-align: center
+  border: 1px solid $border-card
+  transition: 0.2s
+  &:hover 
+    box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1)
+    .card__image:before
+      opacity: 1
+  &s
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+  &__image
+    position: relative
+    &::before
+      content: ''
+      position: absolute  
+      left: 0
+      top: 0
+      width: 100%
+      height: 100%
+      background-image: linear-gradient(to top, #ffd200 0%, rgba(255, 255, 255, 0) 100%)
+      opacity: 0
+      transition: 0.2s
+  &__title
+    margin-top: 39px
+    margin-bottom: 27px
+    +reg
+    font-size: 18px
+    margin-left: 10px
+  &__link 
+    margin-bottom: 46px
+    display: inline-block
+    text-decoration: none
+    position: relative
+    +bold
+    font-size: 16px    
+    color: $text-color
+    &:hover 
+      &::after
+        height: 13px
+    &::after
+      content: ''
+      position: absolute
+      bottom: -4px
+      left: 0
+      width: 100%
+      height: 3px
+      background-color: $main-color
+      display: block
+      z-index: -1
+      transition-duration: 0.2s
+.card
+  &__image > img
+    display: block    
+
+@media (max-width: 768px) and (min-width: 578px)
+  .card
+    margin-left: auto
+    margin-right: auto  
+  
+@media (max-width: 324px)
+  .price
+    &__title
+      padding-top: 51px
+      line-height: 22px
+      font-size: 18px
+      margin-bottom: 24px
+      max-width: 285px
+    &__subtitle
+      font-size: 14px  
+      margin-right: 18px
+  .card
+    &s
+      width: 272px
+      margin: auto 
+    &__title
+      margin-top: 30px
+      font-size: 14px
+      margin-left: -2px
+      margin-bottom: 13px
+    &__link
+      margin-right: 7px  
+      margin-bottom: 31px
+
+       
