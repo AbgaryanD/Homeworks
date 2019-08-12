@@ -53,6 +53,13 @@
     text-decoration: none
     +bold
     color: $text-color
+.offer
+  &__input
+    &:nth-last-child(2)
+      padding-left: 33px
+      font-size: 15px
+  &__button:disabled
+    background-color: $disabled     
 @media (max-width: 1200px)
   .offer  
     background-size: cover
@@ -132,3 +139,7 @@
       margin-left: 11px 
     &__addition
       margin-bottom: 7px  
+  .offer
+    &__input
+      &:nth-last-child(2)
+        padding-left: 19px

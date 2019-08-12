@@ -26,14 +26,14 @@ $(document).ready(function(){
     autoplaySpeed: 2000,
     responsive: [
       {
-        breakpoint: 1200,
+        breakpoint: 1201,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
         }
       },
       {
-        breakpoint: 768,
+        breakpoint: 770,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1
